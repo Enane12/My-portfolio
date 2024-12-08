@@ -1,0 +1,199 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
+}
+section {
+    min-height: 100vh; /* Ensure sections take at least full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-frame {
+position: relative;
+display: inline-block;
+border: 5px solid #fff; /* Bordure blanche */
+padding: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+width: 450px; /* Largeur fixe pour le cadre */
+height: 500px; /* Hauteur fixe pour garder l'aspect carré */
+overflow: hidden; /* Cache tout ce qui dépasse du cadre carré */
+}
+
+.photo-frame img {
+    width: 100%; /* L'image prend toute la largeur du cadre */
+    height: 100%; /* L'image prend toute la hauteur du cadre */
+    object-fit: cover; /* L'image est redimensionnée pour couvrir l'espace sans déformation */
+}
+
+.photo-frame:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+.photo-frame img:hover {
+    transform: rotate(5deg); /* Effet de rotation léger au survol */
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-link.nav-color {
+    color: #fff; /* Couleur par défaut */
+    text-decoration: none; /* Retirer le soulignement par défaut */
+}
+.nav-link.nav-color:hover {
+    color: #28a745 !important; /* Couleur au survol */
+    text-decoration: underline !important; /* Souligner */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.bio-text {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+.btn-dark{
+    background-color: #28a745;
+    border: none;
+}
+.btn-dark:hover {
+    background-color: #218838;
+}
+#skills {
+    padding: 60px 0;
+}
+
+.skill-title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espace entre le nom et le pourcentage */
+}
+
+.skill-title .progress-percentage {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;  /* Aligne le pourcentage à droite */
+    line-height: 30px;  /* Assure un alignement vertical correct */
+}
+
+/* Barres de progression */
+.progress {
+    position: relative;
+    background-color: #333;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.progress-bar {
+    background-color: #28a745;
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+
+h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Pour la version responsive */
+@media (max-width: 768px) {
+    .progress-bar {
+        height: 20px;
+    }
+    .progress-text {
+        font-size: 12px;
+    }
+    .skill-title {
+        font-size: 16px;
+    }
+}
+
+
+.card-img-top {
+    width: 100%;  /* L'image occupe toute la largeur de la carte */
+    height: 200px;  /* Réduire la hauteur des images */
+    object-fit: cover;  /* S'assurer que l'image couvre l'espace sans déformation */
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;  /* Réduire la hauteur des images sur les petits écrans */
+    }
+}
+
+.card {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #333;
+    max-width: 90%;  /* Limiter la largeur des cartes */
+    margin: 0 auto 20px auto;  /* Centrer les cartes et ajouter un espacement entre elles */
+}
+
+.card-body {
+    padding: 15px;  /* Espacement interne de la carte */
+}
+
+
+/* Ajoutez ces styles dans votre fichier styles.css */
+
+.card:hover {
+    transform: translateY(-10px); /* Légère translation vers le haut */
+    transition: transform 0.3s ease-in-out; /* Transition fluide */
+    transform: scale(1.05); /* Effet de zoom sur l'image */
+
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(0.95); /* Effet de zoom sur l'image */
+}
+
+#contact p{
+    word-spacing: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.mail-color {
+    letter-spacing: 1px;
+    color: #28a745; /* Couleur verte par exemple */
+    text-decoration: none; /* Retirer la décoration par défaut (soulignement) */
+}
+
+.mail-color:hover {
+    color: #218838; /* Couleur légèrement plus foncée au survol */
+    text-decoration: underline; /* Souligner le texte au survol */
+}
+
+
+footer {
+    background-color: #111;
+}
