@@ -197,3 +197,79 @@ h2 {
 footer {
     background-color: #111;
 }
+
+
+/* Styles spécifiques pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    /* Ajustement du navbar */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link.nav-color {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    /* Ajustement de la section "Home" */
+    #home .photo-frame {
+        width: 300px; /* Réduction de la largeur */
+        height: 350px; /* Réduction de la hauteur */
+    }
+    #home .display-4 {
+        font-size: 28px; /* Réduction de la taille des titres */
+    }
+    #home p.lead {
+        font-size: 16px; /* Texte plus petit */
+    }
+
+    /* Section "About" */
+    #about .photo-frame {
+        width: 250px;
+        height: 300px;
+        margin: 0 auto; /* Centrer l'image */
+    }
+    #about h3 {
+        font-size: 20px;
+    }
+    #about p.bio-text {
+        font-size: 14px;
+    }
+
+    /* Section "Skills" */
+    .progress {
+        height: 20px; /* Réduction de la hauteur */
+    }
+    .progress-text {
+        font-size: 12px; /* Texte plus petit */
+    }
+    .skill-title {
+        font-size: 16px; /* Réduction de la taille des titres */
+    }
+    .progress-percentage {
+        font-size: 14px; /* Ajustement du pourcentage */
+    }
+
+    /* Section "Portfolio" */
+    .card-img-top {
+        height: 150px; /* Réduction des images */
+    }
+    .card {
+        max-width: 100%; /* Utilisation de toute la largeur disponible */
+        margin-bottom: 20px;
+    }
+
+    /* Section "Contact" */
+    #contact p {
+        font-size: 14px;
+    }
+    .btn-outline-light {
+        padding: 10px; /* Réduction des boutons */
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 12px; /* Texte plus petit pour le footer */
+    }
+}
